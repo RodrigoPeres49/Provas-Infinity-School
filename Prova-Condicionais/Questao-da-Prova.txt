@@ -1,0 +1,4 @@
+
+[LP-A02] Escreva um programa em python que pergunte ao usuário a velocidade de um carro. 
+         Caso ultrapasse 80 km/h, exiba uma mensagem dizendo que o usuário foi multado e
+         o valor da multa, cobrando R$20,00 por cada km que exceder 80 km/h.
