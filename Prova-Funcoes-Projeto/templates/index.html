@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+    <h1>Bem vindo ao gerenciador de tarefas pessoais.</h1>
+    <div class="container">
+        <table>
+            <tr><th colspan="4" >TAREFAS</th></tr>
+            <tr><td>ID</td><td>Nome</td><td class="descricao">Descrição</td><td>Remover</td></tr>
+            {%for i in tarefas:%}
+                <tr><td>{{i.id}}</td><td>{{i.nome}}</td><td class="descricao">{{i.descricao}}</td><td><a href="/tarefa/{{i.id}}/apagar">Remover Tarefa</a></td></tr>
+            {%endfor%}
+        </table>
+        <a href="/criar_tarefa">Criar tarefa</a>
+    </div>
+</body>
+</html>
