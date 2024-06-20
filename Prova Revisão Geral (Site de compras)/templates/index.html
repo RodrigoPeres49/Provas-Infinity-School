@@ -1,0 +1,18 @@
+{%extends '_layout.html'%}
+{%block title%}
+    <title>Bem vindo a loja</title>
+{%endblock%}
+
+<!-- TELA DE LOGIN -->
+
+{%block main%}
+    <h1>Entre na sua conta</h1>
+    <form action="/login" method="POST">
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha">
+        <button type="submit">Login</button>
+    </form>
+    <a href="/cadastro">Não tem uma conta? Cadastre-se</a>
+{%endblock%}
