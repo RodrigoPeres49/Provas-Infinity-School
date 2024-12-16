@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação do restaurante</title>
+</head>
+<body>
+    <div class="avaliacaoRestaurante">
+        <h1>Avaliação do serviço:</h1>
+        <ul>
+            <li>😞 Ruim</li>
+            <li>😐 Regular</li>
+            <li>😃 Bom</li>
+        </ul>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label>Comida</label>
+        <div class="avaliar">
+            <input type="radio" id="comida-ruim" name="comida" value="ruim">
+            <label for="comida-ruim">😞</label>
+            
+            <input type="radio" id="comida-regular" name="comida" value="regular">
+            <label for="comida-regular">😐</label>
+            
+            <input type="radio" id="comida-bom" name="comida" value="bom">
+            <label for="comida-bom">😃</label>
+        </div>
+        
+        <label>Serviço</label>
+        <div class="avaliar">
+            <input type="radio" id="servico-ruim" name="servico" value="ruim">
+            <label for="servico-ruim">😞</label>
+            
+            <input type="radio" id="servico-regular" name="servico" value="regular">
+            <label for="servico-regular">😐</label>
+            
+            <input type="radio" id="servico-bom" name="servico" value="bom">
+            <label for="servico-bom">😃</label>
+        </div>
+        
+        <label>Atendimento</label>
+        <div class="avaliar">
+            <input type="radio" id="atendimento-ruim" name="atendimento" value="ruim">
+            <label for="atendimento-ruim">😞</label>
+            
+            <input type="radio" id="atendimento-regular" name="atendimento" value="regular">
+            <label for="atendimento-regular">😐</label>
+            
+            <input type="radio" id="atendimento-bom" name="atendimento" value="bom">
+            <label for="atendimento-bom">😃</label>
+        </div>
+        
+        <button id="enviarAvaliacao">Enviar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

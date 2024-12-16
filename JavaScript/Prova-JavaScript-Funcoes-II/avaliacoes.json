@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Rodrigo",
+    "comida": "bom",
+    "servico": "bom",
+    "atendimento": "bom"
+  },
+  {
+    "nome": "Juliana",
+    "comida": "bom",
+    "servico": "regular",
+    "atendimento": "ruim"
+  },
+  {
+    "nome": "João",
+    "comida": "ruim",
+    "servico": "regular",
+    "atendimento": "ruim"
+  }
+]
