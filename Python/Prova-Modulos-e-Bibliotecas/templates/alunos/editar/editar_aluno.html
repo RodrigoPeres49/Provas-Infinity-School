@@ -1,0 +1,24 @@
+{%extends '_layout.html'%}
+{%block title%}
+    <title>Cadastrar novo aluno</title>
+{%endblock%}
+{%block main%}
+    <h1>Digite os novos dados do aluno.</h1>
+    <form action="/aluno/{{aluno.id}}/editar_aluno" method="POST">
+        <label for="nome">Nome do aluno</label>
+        <input type="text" value="{{aluno.nome}}" name="nome">
+        <label for="idade">Idade</label>
+        <input type="number" value="{{aluno.idade}}" name="idade">
+        <label for="turma">Turma</label>
+        <select name="turma">
+            <option value="1º Serie">1º Serie</option>
+            <option value="2º Serie">2º Serie</option>
+            <option value="3º Serie">3º Serie</option>
+            <option value="4º Serie">4º Serie</option>
+        </select>
+        <label for="telefone">Telefone:</label>
+        <input type="text" value="{{aluno.telefone}}" name="telefone">
+        <button type="submit">Editar</button>
+    </form>
+    <a class="botao_index" href="/aluno/{{aluno.id}}">VOLTAR</a>
+{%endblock%}

@@ -1,0 +1,21 @@
+{%extends '_layout.html'%}
+{%block title%}
+<title>Alunos Cadastrados</title>
+{%endblock%}
+{%block main%}
+<h1>Lista de alunos</h1>
+<table>
+    <tr><th>Nome</th><th>Idade</th><th>Turma</th><th>Telefone</th><th>Visualizar</th><th>Apagar</th></tr>
+    {%for aluno in alunos%}
+    <tr>
+        <td>{{aluno.nome}}</td>
+        <td>{{aluno.idade}}</td>
+        <td>{{aluno.turma}}</td>
+        <td>{{aluno.telefone}}</td>
+        <td><a class="comando_lista" href="/aluno/{{aluno.id}}">Visualizar</a></td>
+        <td><a class="comando_lista" href="/aluno/{{aluno.id}}/deletar">Apagar</a></td>
+    </tr>
+{%endfor%}
+</table>
+<a class="botao_index" href="/">VOLTAR</a>
+{%endblock%}

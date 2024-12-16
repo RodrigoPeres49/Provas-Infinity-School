@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+    <h1>Nova tarefa.</h1>
+    <form action="/criar_tarefa" method="POST">
+        <label for="nome">Nome da tarefa:</label>
+        <input type="text" name="nome">
+        <label for="descricao">Descrição da tarefa</label>
+        <input class="descricao_input" type="text" name="descricao">
+        <button type="submit">Criar</button>
+
+    </form>
+    <a class="voltar" href="/">Voltar</a>
+</body>
+</html>
