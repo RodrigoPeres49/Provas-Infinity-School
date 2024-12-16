@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Posto Ipiranga Simulador</title>
+</head>
+
+<!-- TITULO DO SITE -->
+
+<body>
+    <div class="barra">
+        <h1>Posto Ipiranga</h1>
+        <div class="gasolina">
+            <ul>
+                <li><h3>{{gasolina.tipo}}</h3></li>
+                <li>Valor: {{gasolina.valor}}</li>
+                <li>Quantidade: {{gasolina.tanque}}</li>
+                <li><a href="/tanque/2">Adicionar 1000 litros</a></li>
+            </ul>
+        </div>
+        <div class="alcool">
+            <ul>
+                <li><h3>{{alcool.tipo}}</h3></li>
+                <li>Valor: {{alcool.valor}}</li>
+                <li>Quantidade: {{alcool.tanque}}</li>
+                <li><a href="/tanque/1">Adicionar 1000 litros</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CORPO DO SITE -->
+    <div class="corpo">
+        
+        <div class="veiculo">
+            <form action="/posto" method="POST">
+                <label for="veiculo">Selecione o veículo desejado:</label>
+                <select name="veiculo" id="veiculo">
+                    <option value="1">Wolkswagen Gol 2003</option>
+                    <option value="2">Siena 2013</option>
+                    <option value="3">Chevrolet Onix 2024</option>
+                    <option value="4">Ferrari SF90 Spider</option>
+                </select>
+                <button type="submit">Selecionar</button>
+            </form>
+        
+            <h2>{{veiculo.modelo}}</h2>
+            <ul>
+                <li>Marca: {{veiculo.marca}}</li>
+                <li>Modelo: {{veiculo.modelo}}</li>
+                <li>Tipo de combustivel: {{veiculo.tipo_combustivel}}</li>
+                <li>Bomba: {{veiculo.bomba}}</li>
+                <li>Consumo por km: {{veiculo.consumo}}</li>
+            </ul>
+        </div>
+        <div class="posto">
+            <h2>Simulador de posto</h2>
+            <form action="/posto/abastecer" method="POST">
+                <label for="combustivel">Tipo de combustivel:</label>
+                <select name="combustivel" id="combustivel">
+                    <option value="alcool">Álcool</option>
+                    <option value="gasolina">Gasolina</option>
+                </select><br>
+                <h2>Método de abastecer</h2><br>
+                <label for="dinheiro">Por dinheiro:</label>
+                <input type="radio" id="dinheiro" value="dinheiro">
+                <label>Informe o valor:</label>
+                <input type="number" name="metodo">
+                <label for="litro">Por Litro:</label>
+                <input type="radio" name="metodo" id="litro" value="litro">
+                <label>Informe o valor:</label>
+                <input type="number" name="metodo">
+                <button type="submit">Abastecer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

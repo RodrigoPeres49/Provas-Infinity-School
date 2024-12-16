@@ -1,0 +1,79 @@
+/* TAG BODY DA PAGINA */
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+    margin: 0;
+}
+
+/* PRIMEIROS ELEMENTOS DA PAGINA */
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: yellow;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.barra h1{
+    display: block;
+    margin: 0;
+    width: 20%;
+}
+
+.barra ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.barra li{
+    align-items: center;
+    font-size: 15px;
+    margin: 10px;
+}
+.barra li h3{
+    font-size: default;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: aqua;
+}
+.barra li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+/* CORPO DO SITE */
+
+.corpo{
+    display: flex;
+    flex-direction: row;
+}
+
+.veiculo{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.posto{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+
+}

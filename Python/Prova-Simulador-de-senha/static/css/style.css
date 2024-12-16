@@ -1,0 +1,84 @@
+.principal{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: gray;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frame_numeros {
+    font-size: 20px;
+    width: 15%;
+    height: 15%;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: black;
+    color: yellow;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.frame_numeros form p{
+    font-size: 13px;
+}
+
+.frame_numeros table{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.frame_numeros table button{
+    text-align: center;
+    background: black;
+    color: yellow;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    
+}
+.frame_numeros .solicitar{
+    text-align: center;
+    background: black;
+    color: yellow;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+    margin: 30px ;
+    margin-left: 45px;
+    
+}
+.frame_numeros input{
+    width: 50%;
+    position: relative;
+    margin: 10px;
+    margin-left: 45px;
+    text-align: center;
+    display: flex;
+}
+
+.frame_numeros p{
+    width: 50%;
+    position: relative;
+    margin: 10px;
+    margin-left: 45px;
+    text-align: center;
+}
+
+.frame_numeros .cadastrar{
+    text-align: center;
+    background: black;
+    color: yellow;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+.titulo{
+    color: yellow;
+    font-weight: bold;
+}
