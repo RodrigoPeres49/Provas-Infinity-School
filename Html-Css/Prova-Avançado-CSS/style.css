@@ -1,0 +1,142 @@
+
+/* CORPO DO FORMULARIO */
+
+.formulario{
+
+    /* TODOS OS CAMPOS ORDENADOS EM COLUNAS */
+
+    display: flex;
+    flex-direction: column;
+    
+    /* ESTILO DE FONTE E COR DE FUNDO */
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightgreen;
+
+    /* ESTILO DE BORDA, TAMANHO E ESPAÇAMENTO */
+
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 40%;
+    height: 40%;
+}
+
+/* PADRONIZAÇÃO DOS INPUTS DO FORMULARIO */
+
+.formulario label ~ input{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+/* INPUT MAIORES COMO NOME E EMAIL */
+
+.formulario .maior{
+    width: 70%;
+}
+
+/* ALGUNS INPUT SERÃO MAIS CURTOS DEFINI A CLASSE COMO " curto " SERÁ USADA NOS CAMPOS CEP E TELEFONE E ETC */
+
+.formulario .curto{
+    width: 30% ;
+}
+
+/* LABELS DO FORMULARIO */
+
+.formulario label{
+    font-weight: bold;
+    margin: 3px;
+}
+
+
+/* ESTILIZAÇÃO DO INPUT DATE  */
+
+.dados-pessoais input[type="date"]{
+
+    /* COR DE FUNDO */
+
+    background-color: blanchedalmond;
+    
+    /* TAMANHO DE FONTE E DO INPUT , CENTRALIZAÇÃO DE TEXTO */
+
+    width: 22%;
+    height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* CAMPO DE DADOS PESSOAIS DENTRO DE UMA DIV NO FORMULARIO */
+
+.formulario .dados-pessoais{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTADO CIVIL ESTILIZAÇÃO */
+
+.dados-pessoais .estado-civil{
+    display: flex;
+    flex-direction: column;
+}
+
+.estado-civil div{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* DIV DE CONTATO */
+
+.formulario .contato{
+    display: flex;
+    flex-direction: column;
+}
+
+/* DIV DE ENDEREÇO */
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+}
+
+/* O CAMPO DE NUMERO NO ENDEREÇO TERÁ UM INPUT MENOR QUE OS DEMAIS SERA DEFINIDA NA CLASSE " numero "  */
+
+.endereco .numero{
+    width: 10%;
+}
+
+/* CADA CAMPO DIV NA CLASSE ENDEREÇO SERA ORDENADA EM LINHA */
+
+.endereco div{
+    margin: 5px;
+    display: inline-block;
+}
+
+
+/* ESTILIZAÇÃO DOS OPERADORES  */
+
+.operadores{
+    margin: 15px;
+}
+
+/* ESTILIZAÇÃO DOS BUTTONS */
+
+.operadores button{
+    
+    /* COR DE FUNDO */
+
+    background-color: blanchedalmond;
+    
+    /* ESPAÇAMENTO TAMANHO E BORDAS */
+
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: fit-content;
+    height: 25px;
+    font-weight: bold;
+}
+
+

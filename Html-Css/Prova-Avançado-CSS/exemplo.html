@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK DO ARQUIVO CSS -->
+     <link rel="stylesheet" href="style.css">
+
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="formulario">
+        <form>
+            <div class="dados-pessoais">
+
+                <!-- DADOS PESSOAIS -->
+
+                <h2>Dados Pessoais:</h2>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="maior">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" class="curto">
+                <label for="datanasc">Data de Nascimento:</label>
+                <input type="date" name="datanasc" id="datanasc">
+
+                <!-- ESTADO CIVIL INPUT TYPE RADIO -->
+
+                <label for="estadocivil">Estado Civil:</label>
+                <div class="estado-civil">
+                    <div>
+                        <label>Solteiro:</label>
+                        <input type="radio" name="estadocivil" id="estadocivil" value="solteiro">
+                    </div>
+                    <div>
+                        <label>Casado(a):</label>
+                        <input type="radio" name="estadocivil" id="estadocivil" value="casado">
+                    </div>
+                    <div>
+                        <label>Divorciado(a):</label>
+                        <input type="radio" name="estadocivil" id="estadocivil" value="divorciado">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- DADOS PARA CONTATO -->
+
+            <div class="contato">
+
+                <h2>Contato:</h2>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone" class="curto">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="maior">
+                <label for="linkedin">Linkedin:</label>
+                <input type="text" name="linkedin" id="linkedin" class="maior">
+
+            </div>
+            
+            <!-- ENDEREÇO -->
+
+            <div class="endereco">
+
+                <h2>Endereço:</h2>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep" class="curto">
+                </div>
+                <div>
+                    <label for="logradouro">Logradouro:</label>
+                    <input type="text" name="logradouro" id="logradouro" class="maior">
+                </div>
+                <div>
+                    <label for="numero">Nº:</label>
+                    <input type="number" name="numero" id="numero" class="numero">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" name="complemento" id="complemento" class="curto">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" class="curto">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" class="curto">
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado" id="estado" class="curto">
+                </div>
+            </div>
+             
+            <!-- OPERADORES -->
+
+            <div class="operadores">
+
+                <button type="submit">Enviar dados</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>

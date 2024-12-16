@@ -1,0 +1,52 @@
+.formulario{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    background-color: brown;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.formulario h1{
+    margin-left: 15%;
+}
+.formulario .titulo{
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.formulario input[type="email"], input[type="password"]{
+    width: 75%;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.formulario label{
+    margin-left: 10px;
+}
+
+.formulario button{
+    width: 100px;
+    height: 30px;
+    border: 2.5px solid black;
+    border-radius: 5px;
+    background-color: gray;
+}
+.operadores{
+    margin: 5px;
+}
+
+.curso{
+    display: block;
+    margin: 5px;
+}
+
+.cidade{
+    display: block;
+    flex-direction: row;
+    margin: 5px;
+}
+

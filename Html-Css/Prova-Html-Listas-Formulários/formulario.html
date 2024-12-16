@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cadastre-se</title>
+</head>
+<body>
+
+    <form class="formulario">
+
+        <h1>Faça seu cadastro!</h1>
+
+        <!-- E-MAIL -->
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+
+        <!-- SENHA E CONFIRMAÇÃO DE SENHA -->
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="confirmar-senha" name="confirmar-senha">
+        <label for="confirmar-senha">Confirmar senha:</label>
+        <input type="password" id="confirmar-senha" name="confirmar-senha">
+
+        <!-- CURSO EM QUE DESEJA PARTICIPAR -->
+
+        <label class="titulo">Selecione os cursos que deseja participar:</label>
+
+    
+        <!-- DESIGN FULL STACK -->
+
+        <div class="curso">
+            <label for="designfullstack">Design Full Stack:</label>
+            <input type="checkbox" value="Design Full Stack" id="designfullstack" name="designfullstack">
+        </div>
+    
+        <!-- DATA SCIENCE -->
+
+        <div class="curso">
+            <label for="datascience">Data Science:</label>
+            <input type="checkbox" value="Data Science" id="datascience" name="datascience">
+        </div>
+
+        <!-- FILM DESIGN -->
+        
+        <div class="curso">
+            <label for="filmdesign">Film Design:</label>
+            <input type="checkbox" value="Film Design" id="filmdesign" name="filmdesign">
+        </div>
+
+        <!-- FOTOGRAFIA DESIGN -->
+        
+        <div class="curso">
+            <label for="fotografiadesign">Fotografia Design:</label>
+            <input type="checkbox" value="Fotografia Design" id="fotografiadesign" name="fotografiadesign">
+        </div>
+
+        <!-- PROGRAMAÇÃO FULL STACK -->
+
+        <div class="curso">
+            <label for="programacaofullstack">Programação Full Stack:</label>
+            <input type="checkbox" value="Programação Full Stack" id="programacaofullstack" name="programacaofullstack">
+        </div>
+        <!-- CIDADE EM QUE DESEJA PARTICIPAR -->
+
+        <label class="titulo">Selecione a cidade:</label>
+
+        <div class="cidade">
+            <label for="belohorizonte">Belo Horizonte:</label>
+            <input type="radio" value="Belo Horizonte" id="cidade" name="cidade">
+        </div>
+
+        <div class="cidade">
+            <label for="cursos">Fortaleza</label>
+            <input type="radio" value="Fortaleza" id="cidade" name="cidade">
+        </div>
+
+
+        <!-- BOTÃO PARA CADASTRAR OU LIMPAR OS CAMPOS -->
+        <div class="operadores">
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
