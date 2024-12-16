@@ -1,0 +1,18 @@
+{%extends '_layout.html'%}
+{%block title%}
+    <title>Cadastro de pessoas.</title>
+{%endblock%}
+{%block main%}
+    <table>
+        <thead>
+            <th colspan="4">Lista de pessoas cadastradas</th>
+            <tr><th>ID</th><th>Nome</th><th>Senha</th><th>E-mail</th></tr>
+        </thead>
+        <tbody>
+            {%for i in pessoas%}
+            <tr><td>{{i['id']}}<td>{{i['nome']}}<td>{{i['senha']}}</td><td>{{i['email']}}</td></tr>
+            {%endfor%}
+        </tbody>
+    </table>
+    <a href="/">Voltar</a>
+{%endblock%}

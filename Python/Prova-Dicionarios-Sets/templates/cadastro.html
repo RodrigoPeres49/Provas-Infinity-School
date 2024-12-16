@@ -1,0 +1,20 @@
+{% extends '_layout.html' %}
+{% block title %}
+    <title>Cadastre-se</title>
+{% endblock %}
+{% block main %}
+<h1>Cadastre o novo aluno!</h1>
+    <form action="/cadastrar_aluno" method="POST">
+        <label for="nome" >Nome:</label>
+        <input type="text" name="nome">
+        <label for="idade" >Idade:</label>
+        <input type="text" name="idade">
+        <label for="matricula" >Matricula:</label>
+        <input type="text" name="matricula">
+        <button type="submit">Cadastrar</button>
+
+    </form>
+    <br>
+    <a href="/">Voltar</a>
+    <p>{{info}}</p>
+{% endblock %}

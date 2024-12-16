@@ -1,0 +1,14 @@
+{%extends '_layout.html'%}
+{%block title%}
+    <title>{{pessoa['nome']}}</title>
+{%endblock%}
+{%block main%}
+    <h1>Bem vindo {{pessoa['nome']}}</h1>
+    <table>
+    <tr><th colspan="3">Dados cadastrais.</th></tr>
+    <tr><td>Nome</td><td>E-mail</td><td>Senha</td></tr>
+    <tr><td>{{pessoa['nome']}}</td><td>{{pessoa['email']}}</td><td>{{pessoa['senha']}}</td></tr>
+    </table>
+    <a href="apagar">Deletar conta</a>
+    <a href="/">Voltar</a>
+{%endblock%}
