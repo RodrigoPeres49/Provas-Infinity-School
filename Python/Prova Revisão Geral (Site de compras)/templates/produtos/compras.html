@@ -1,0 +1,22 @@
+{%extends '_layout.html'%}
+{%block title%}
+Produtos que estão a venda
+{%endblock%}
+
+{%block main%}
+
+<!-- LISTA DE PRODUTOS A VENDA -->
+
+<p>Creditos: {{usuario.dinheiro_ficticio}}</p>
+<table>
+    <thead>
+        <tr colspan="5">Produtos a venda!</tr>
+    </thead>
+    <tbody>
+        <tr><td>Nome</td><td>Descrição</td><td>Preço</td><td>Operação</td></tr>
+        {%for compras in produtos%}
+        <tr><td>{{compras.nome}}</td><td>{{compras.descricao}}</td><td>{{compras.preco}}</td><td><a href="/produto/comprar/{{compras.id}}">Comprar</a></a></td></tr>
+        {%endfor%}
+    </tbody>
+</table>
+{%endblock%}

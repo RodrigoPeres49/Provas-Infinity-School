@@ -1,0 +1,20 @@
+{%extends '_layout.html'%}
+{%block title%}
+Venda!
+{%endblock%}
+
+{%block main%}
+
+<!-- CADASTRAR NOVO PRODUTO PARA VENDA -->
+
+<h1>Informe a descrição do produto para venda!</h1>
+<form action="/produto/vender" method="POST">
+    <label for="nome">Nome do produto:</label>
+    <input type="text" name="nome" id="nome">
+    <label for="descricao">Descrição do produto:</label>
+    <input type="text" name="descricao" id="descricao">
+    <label for="preco">Preço:</label>
+    <input type="number" name="preco" id="preco">
+    <button type="submit">Colocar a venda!</button>
+</form>
+{%endblock%}
