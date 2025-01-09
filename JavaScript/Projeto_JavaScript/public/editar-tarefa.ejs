@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body class="principal">
+    <h1>Gerenciador de Tarefas</h1>
+    <div class="form-editar-tarefa">
+
+        <p>Modifique os campos abaixo para editar a tarefa: </p>
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" value="<%= tarefa.descricao %>" required>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" value="<%= tarefa.data %>" required>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" value="<%= tarefa.hora %>" required>
+
+        <button class="botao" id="editar-tarefa">Editar</button> 
+        
+    </div>
+    <script src="/script.js"></script>
+
+</body>
+</html>
