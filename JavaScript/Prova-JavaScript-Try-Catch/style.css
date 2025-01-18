@@ -1,0 +1,60 @@
+.principal{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.principal button{
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.principal button:hover{
+    transition: 0.1s;
+    background-color: green;
+}
+
+.cabecalho{
+    background-color: gray;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.cabecalho ul{
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+}
+.cabecalho li{
+    display: flex;
+    padding: 5px;
+
+}
+
+.extrato ul, .extrato{
+    list-style-type: none;
+}
+
+.esconder{
+    display: none;
+}
+
+.mostrar {
+    padding: 80px;
+    font-size: 35px;
+}
+
+.mostrar input{
+    width: 250px;
+    font-size: 30px;
+}
+
+.mostrar button{
+    font-size: 25px;
+}

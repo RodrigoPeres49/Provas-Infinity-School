@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de Caixa eletrônico</title>
+</head>
+<body class="principal">
+
+    <div class="cabecalho">
+        <h1>Bem vindo ao simulador de Caixa eletrônico</h1>
+        <ul>
+            <li>Saldo: <div id="saldo"></div> </li>
+            <li><button id="exibirSaque">Saque</button></li>
+            <li><button id="exibirDeposito">Deposito</button></li>
+            <li><button id="exibirExtrato">Extrato</button></li>
+    
+        </ul>
+    </div>
+    
+    <div class="esconder" id="saque">
+        <label for="valorSaque">Valor de saque</label>
+        <input type="number" id="valorSaque">
+        <button id="sacar">Sacar</button>
+    </div>
+
+    <div class="esconder" id="deposito">
+        <label for="valorDeposito">Valor a ser depositado</label>
+        <input type="number" id="valorDeposito">
+        <button id="depositar">Depositar</button>
+    </div>
+
+    <div>
+         <ul class="extrato" id="extrato"></ul>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
